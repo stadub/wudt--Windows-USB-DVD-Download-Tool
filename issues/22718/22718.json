@@ -1,0 +1,121 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "This error happens when the USB stick already have something in its MBR, which WUDT doesn't CLEAR.\n \nThe workaraund (proposed in this post http://4sysops.com/archives/windows-7-usbdvd-download-tool-wudt-is-unable-to-copy-files/ ) is to use the diskpart utility to issue the clean command on the disk, which cleans the MBR.\n \nIt works!\nThe commands are:\n \ndiskpart\nlist disk\nselect disk #\nclean\ncreate partition primary\nselect partition 1\nactive\nformat quick fs=fat32\nassign\nexit",
+    "LastUpdatedDate": "2016-08-03T16:39:08.66-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "wudt",
+    "ReportedDate": "2012-05-09T03:42:38.64-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "We were unable to copy your files. Please check your USB device and the selected ISO file and try again.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 7,
+    "Id": 22718
+  },
+  "FileAttachments": [
+    {
+      "FileId": 8766,
+      "FileName": "1.png",
+      "DownloadUrl": ".\\8766"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Thanks you so much, it worked!!",
+      "PostedDate": "2012-08-29T13:25:05.833-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-09-26T02:43:25.763-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-10-28T04:10:57.593-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-16T13:47:30.987-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T18:37:46.703-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Worked for me too. Thanks for posting this.",
+      "PostedDate": "2013-09-13T05:46:02.307-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-09-13T05:46:22.347-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "thanks it worked for me too :O ....",
+      "PostedDate": "2014-02-16T13:26:47.75-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "but in middle i got error unable to clean disk...",
+      "PostedDate": "2014-02-16T13:27:29.97-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "perfect. thank you!",
+      "PostedDate": "2014-05-22T09:40:50.36-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Worked for me, thanks!",
+      "PostedDate": "2014-09-09T18:04:14.517-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2014-09-09T18:06:20.043-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2014-09-17T03:05:28.073-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2016-08-03T16:39:06.04-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thank you so much, it work with my W10 pro ver 1607 comp 14393.10",
+      "PostedDate": "2016-08-03T16:39:08.66-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

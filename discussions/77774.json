@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "265951",
+    "ThreadId": "77774",
+    "Html": "<p>The greatest flaw with this tool is it's inability to work with USB HDD's, I have a few memory sticks that can fit the ISO on it, but then there isn't any space to put updates and runtimes/codec's etc without carrying extra media arround with me to do a base installation. Using other tools I was able to transfer the install to a USB hdd and now I have space for these extras as well as a seperate partition on the same drive to preform a backup of the PC's data before continuing to format and install the PC.</p>\r\n<p>I hope that this tool can be upgraded to support HDD's as the applying of the bootsector and setting it to active is the same process used for memory sticks, so if the checking for drive type on the destination screen were laxed or even optional with a warning, we'd have the most successful and simplified USB creation solution on the net.</p>\r\n<p>Thanks for your work</p>",
+    "PostedDate": "2009-12-10T14:09:28.797-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "273012",
+    "ThreadId": "77774",
+    "Html": "<p>Currently, this is by design.</p>\r\n<p>The reason is that we were afraid of users accidentally formatting the wrong drive.&nbsp; Even with proper warning messages in place, it's very possible for someone to inadvertently format their external USB drive.</p>",
+    "PostedDate": "2010-01-04T11:25:09.813-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "273018",
+    "ThreadId": "77774",
+    "Html": "<blockquote style=\"border:solid .1em #ccc;font-style:italic;margin:.25em 1em 0 1em;padding:0 .25em 0 .25em\"><strong>zacharye wrote:</strong><br>\r\n<p>Currently, this is by design.</p>\r\n<p>The reason is that we were afraid of users accidentally formatting the wrong drive.&nbsp; Even with proper warning messages in place, it's very possible for someone to inadvertently format their external USB drive.</p>\r\n</blockquote>\r\n<p>Stupid irrational fear will never get you anywhere in the OpenSource world my dear Microsoft.</p>\r\n<p>N00bs will never attempt doing this, because they don't know what it is, and, even if they DO format their external USB drive, it is their fault, especially if they have ignored a clear warning.</p>\r\n<p>So please, STOP KEEPING MICROSOFT retarded Open-Source-wise.</p>\r\n<p>I have always loved Windows, and I am a great fan, I have even reported commercial piracy cases and testified in court on behalf of Microsoft in my country (I live in eastern Europe).</p>\r\n<p>&nbsp;</p>\r\n<p>So please you guys, stop making Microsoft the laughing stock of the island.....</p>",
+    "PostedDate": "2010-01-04T11:38:45.96-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "273582",
+    "ThreadId": "77774",
+    "Html": "<p>Or put nicely, please use an advanced option mode, a checkbox on the first screen or perhaps a 2nd build, such as AWUDT (with the A being Advanced).</p>\r\n<p>Microsoft have done fine to offer reliable and user friendly tools way before open source was able to, BUT what they recently learned for the better is that advanced tools/features and options are when make us hardcore PC users happy with a product, Power shell for example.</p>\r\n<p>Ok now consider this, YOU ARE MICROSOFT badged, why can't we have an option not to format the USB drive but to make it bootable from the current NTFS formatted/partitioned USB HDD? The boot sector/files do not require a formatted drive to be applied so just make it not format USB HDD's and it'll keep people safe from accidents, and the smart people (like me and the nice guy above) will simply use Explorer to format our drives if we have boot problems with it while maintaining USB HDD safety for novices.</p>\r\n<p>The goal for WUDT should be and always have been, a way to make installing your great products from ANY form of USB Bootable Media, not limited to ThumbDrive only support. I attempted to fix this myself but the VS2008 C# was unable to make sense of some of the code during compiling (I since read about the Addon that was needed, but would prefer a proper in house release than starting off my own maintenance version.</p>\r\n<p>&nbsp;</p>\r\n<p>Best of luck and please do your best to impress us, this is the time to be preparing for USB 3, Having Windows installed in 5 minutes from USB 3 to SSD</p>",
+    "PostedDate": "2010-01-05T18:34:51.9-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "286702",
+    "ThreadId": "77774",
+    "Html": "<p>OpenSource means OpenSource. Change it your own way. Here for example:</p>\r\n<p>Look into &quot;%userprofile%\\AppData\\Local\\Apps\\Windows 7 USB DVD Download Tool&quot;</p>\r\n<p>extract wudtsource.zip</p>\r\n<p>open MSStoreISOTool.sln with Visual Studio 2008</p>\r\n<p>edit MSStoreISOTool-&gt;MSStoreISOTool-&gt;DriveService-&gt;DriverService.cs</p>\r\n<p><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\"></span></span><span style=\"color:#2b91af;font-size:x-small\"><span style=\"color:#2b91af;font-size:x-small\">DriveStatus</span></span><span style=\"font-size:x-small\"> Initialize(</span><span style=\"color:#2b91af;font-size:x-small\"><span style=\"color:#2b91af;font-size:x-small\">DriveType</span></span><span style=\"font-size:x-small\"> type)&quot;</span></p>\r\n<p>search for &quot;protected</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;i<span style=\"font-size:x-small\">nsert some comments&nbsp;</span>\r\n<p><span style=\"color:#008000;font-size:x-small\"><span style=\"color:#008000;font-size:x-small\">//if (drive.DriveType == type)<br></span></span><span style=\"color:#008000;font-size:x-small\"><span style=\"color:#008000;font-size:x-small\">//{<br></span></span><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">this</span></span><span style=\"font-size:x-small\">.drives.Add(drive);<br></span><span style=\"color:#008000;font-size:x-small\"><span style=\"color:#008000;font-size:x-small\">//}</span></span></p>\r\n<p>and compile and run it!!!</p>\r\n</p>",
+    "PostedDate": "2010-02-06T16:30:22.793-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "289597",
+    "ThreadId": "77774",
+    "Html": "<blockquote style=\"border:solid .1em #ccc;font-style:italic;margin:.25em 1em 0 1em;padding:0 .25em 0 .25em\"><strong></strong>Ok now consider this, YOU ARE MICROSOFT badged, why can't we have an option not to format the USB drive but to make it bootable from the current NTFS formatted/partitioned USB HDD? The boot sector/files do not require a formatted drive to be applied so just make it not format USB HDD's and it'll keep people safe from accidents, and the smart people (like me and the nice guy above) will simply use Explorer to format our drives if we have boot problems with it while maintaining USB HDD safety for novices.</blockquote>\r\n<p>I know it's not exactly USB HDD support but there is an option to prevent formatting the drive &gt; http://wudt.codeplex.com/documentation at the bottom of the page.</p>",
+    "PostedDate": "2010-02-11T07:52:42.067-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

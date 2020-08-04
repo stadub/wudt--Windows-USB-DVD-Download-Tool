@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "694589",
+    "ThreadId": "278551",
+    "Html": "\r\n<p>I can't seem to get past an &quot;Unable to Copy Files&quot; error after the format part of step 4. Any ideas? The ISO burned to DVD&#43;R failed to boot on my machine for some reason (will try DVD-R if I have to next) but I had a 4GB USB flash drive on hand and figured\r\n I'd give this a whack first. I also tried the bug filed on extracting bootsect.exe and copying it to the tool's dir, and it didn't help at all.</p>\r\n",
+    "PostedDate": "2011-11-06T22:42:09.77-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "891361",
+    "ThreadId": "278551",
+    "Html": "<p>Have you found the solution to this problem? I'm having the same issue too.</p>",
+    "PostedDate": "2012-07-25T15:08:57.75-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1263822",
+    "ThreadId": "278551",
+    "Html": "I just had this issue and found the solution was to first clean the MBR of the flash drive from diskpart\r<br />\n<br />\ndiskpart\r<br />\nlist disk\r<br />\nselect disk #\r<br />\nclean\r<br />\ncreate partition primary\r<br />\nselect partition 1\r<br />\nactive\r<br />\nformat quick fs=fat32\r<br />\nassign\r<br />\nexit\r<br />\n<br />\nSee <a href=\"https://wudt.codeplex.com/workitem/22718\" rel=\"nofollow\">https://wudt.codeplex.com/workitem/22718</a><br />\n",
+    "PostedDate": "2014-07-08T18:21:42.017-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1290899",
+    "ThreadId": "278551",
+    "Html": "I had the same problem however I still got the error &quot;Unable to copy files&quot; even after following the instructions. \r<br />\n<br />\nIn my case Avira Antivirus Pro was running in the background and the background scanner was somehow interferring when the autorun.inf was written to the USB stick. \r<br />\n<br />\nAfter deactivating the realtimer scanner it worked perfectly. \r<br />\n<br />\nSo ensure your antivirus scanners are not running in the background additional to the steps listed in the previous post. <br />\n",
+    "PostedDate": "2014-08-17T15:09:52.47-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

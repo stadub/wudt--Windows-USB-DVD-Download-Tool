@@ -1,0 +1,89 @@
+[
+  {
+    "Id": "0",
+    "Name": "1.0",
+    "DevelopmentStatus": "Stable",
+    "Description": "For more information about the Windows 7 USB/DVD Download Tool, please see \nhttp://store.microsoft.com/help/ISO-Tool. \n\n\nThe Windows 7 USD/DVD Download Tool uses material from ImageMaster, a .NET C#\napplication for reading and writing disc images (*.iso files).  ImageMaster \nis licensed under the terms of the GPL.  For more information about ImageMaster,\nplease see http://imagemaster.codeplex.com/.\n\n\nThis project uses the WIX Votive plugin for Visual Studio 2008.  Please see\nhttp://wix.sourceforge.net/votive.html for installation instructions.\n\n\nTo build in Visual Studio 2008:\n\n1. Make desired changes to the source code.\n\n2. Copy the wudtsource.zip file to the same directory as the .sln file.\n\n3. Build the project in Visual Studio.\n\n\nTo create localized installers and self-extracting files:\n\n1. Build the project as described above.\n\n2. Run the Install\\CreateLocalizedInstallers.cmd script to create the \n   localized MSI installers.\n\n\nTo bypass formatting the USB device within the tool:\n\n1. Ensure the registry key \"HKCU\\SOFTWARE\\Microsoft\\ISO Backup Tool\" is created.\n\n2. Create a new DWORD value named \"DisableFormat\" in this location and set the value to 1.\n\nNOTE: The USB device should be formatted manually before running the tool.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-12-09T14:16:18.7-08:00",
+    "Files": [
+      {
+        "Id": "1034ad5c-29f9-497a-a98a-281ea8b849db",
+        "FileName": "Windows7-USB-DVD-Download-Tool-Installer-en-US.exe",
+        "Url": "./0/1034ad5c-29f9-497a-a98a-281ea8b849db",
+        "Type": "Application",
+        "UploadDate": "2009-12-09T13:58:01.663-08:00"
+      },
+      {
+        "Id": "ff1d3d7a-f6b5-403c-9fab-36ef3d436d00",
+        "FileName": "wudtsource.zip",
+        "Url": "./0/ff1d3d7a-f6b5-403c-9fab-36ef3d436d00",
+        "Type": "Source Code",
+        "UploadDate": "2009-12-09T13:59:58.223-08:00"
+      },
+      {
+        "Id": "dcd1d6bd-ae8a-470f-92fd-1c2b9a256628",
+        "FileName": "Windows7-USB-DVD-Download-Tool-Installer-de-DE.exe",
+        "Url": "./0/dcd1d6bd-ae8a-470f-92fd-1c2b9a256628",
+        "Type": "Application",
+        "UploadDate": "2009-12-09T14:16:16.403-08:00"
+      },
+      {
+        "Id": "40964f14-0ed5-4e3b-87dd-3f0a8676eeb3",
+        "FileName": "Windows7-USB-DVD-Download-Tool-Installer-en-AU.exe",
+        "Url": "./0/40964f14-0ed5-4e3b-87dd-3f0a8676eeb3",
+        "Type": "Application",
+        "UploadDate": "2009-12-09T14:16:16.62-08:00"
+      },
+      {
+        "Id": "c3bc418f-17e6-4415-bb56-463f90b3b7de",
+        "FileName": "Windows7-USB-DVD-Download-Tool-Installer-en-GB.exe",
+        "Url": "./0/c3bc418f-17e6-4415-bb56-463f90b3b7de",
+        "Type": "Application",
+        "UploadDate": "2009-12-09T14:16:16.793-08:00"
+      },
+      {
+        "Id": "6797623f-ddca-4a60-ab45-a6da20f2fd0b",
+        "FileName": "Windows7-USB-DVD-Download-Tool-Installer-es-ES.exe",
+        "Url": "./0/6797623f-ddca-4a60-ab45-a6da20f2fd0b",
+        "Type": "Application",
+        "UploadDate": "2009-12-09T14:16:16.98-08:00"
+      },
+      {
+        "Id": "5e299824-ff0d-4e0a-8425-5fe14acb37f6",
+        "FileName": "Windows7-USB-DVD-Download-Tool-Installer-fr-FR.exe",
+        "Url": "./0/5e299824-ff0d-4e0a-8425-5fe14acb37f6",
+        "Type": "Application",
+        "UploadDate": "2009-12-09T14:16:17.37-08:00"
+      },
+      {
+        "Id": "7c4884fe-6793-428b-9310-a303db4e7fb2",
+        "FileName": "Windows7-USB-DVD-Download-Tool-Installer-it-IT.exe",
+        "Url": "./0/7c4884fe-6793-428b-9310-a303db4e7fb2",
+        "Type": "Application",
+        "UploadDate": "2009-12-09T14:16:17.51-08:00"
+      },
+      {
+        "Id": "aca14332-d2e8-4c17-8661-33176b27d7d0",
+        "FileName": "Windows7-USB-DVD-Download-Tool-Installer-ja-JP.exe",
+        "Url": "./0/aca14332-d2e8-4c17-8661-33176b27d7d0",
+        "Type": "Application",
+        "UploadDate": "2009-12-09T14:16:17.713-08:00"
+      },
+      {
+        "Id": "20dc13ea-aad0-4fab-9f1a-8eaa39edb54b",
+        "FileName": "Windows7-USB-DVD-Download-Tool-Installer-ko-KR.exe",
+        "Url": "./0/20dc13ea-aad0-4fab-9f1a-8eaa39edb54b",
+        "Type": "Application",
+        "UploadDate": "2009-12-09T14:16:17.963-08:00"
+      },
+      {
+        "Id": "22d8bb86-7fe3-49f4-807f-a8b46564f267",
+        "FileName": "Windows7-USB-DVD-Download-Tool-Installer-nl-NL.exe",
+        "Url": "./0/22d8bb86-7fe3-49f4-807f-a8b46564f267",
+        "Type": "Application",
+        "UploadDate": "2009-12-09T14:16:18.247-08:00"
+      }
+    ]
+  }
+]

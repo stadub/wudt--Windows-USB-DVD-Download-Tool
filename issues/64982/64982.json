@@ -1,0 +1,66 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I Have Windows 10 Running On My PC And When Attempting To Install It Tells Me to Install .NET Framework When The .NET Framework Installer Tells Me That I Already Have It Installed But It Still Wont Let Me Install The Tool.",
+    "LastUpdatedDate": "2016-06-27T07:20:01.193-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "wudt",
+    "ReportedDate": "2015-11-01T06:10:19.52-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": ".Net Framework Error",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 2,
+    "Id": 64982
+  },
+  "FileAttachments": [
+    {
+      "FileId": 7700,
+      "FileName": "Capture.PNG",
+      "DownloadUrl": ".\\7700"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Same problem here. I have the latest version of Windows 10. Any way to fix?",
+      "PostedDate": "2015-12-31T09:25:05.93-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-12-31T09:25:10.133-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Use this: [TEXT](http://answers.microsoft.com/en-us/insider/forum/insider_wintp-insider_install/how-to-instal-net-framework-35-on-windows-10/450b3ba6-4d19-45ae-840e-78519f36d7a4?auth=1)",
+      "PostedDate": "2016-04-28T13:17:03.283-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": ".NET 3.5 and below are not 'really' the same as .NET 4.x.\r\n\r\nYou have to install the .NET 3.5 on your computer (but keep .NET 4.6.x on it)",
+      "PostedDate": "2016-06-27T07:20:01.193-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

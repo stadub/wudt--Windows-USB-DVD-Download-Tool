@@ -1,0 +1,105 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Apparently, if you download a 64bit iso to a 32bit OS and try to 'burn' the USB (or DVD?) boot image. it will fail.  The 'fix' according the MS Store sight is to download a copy of bootsect.exe from within your account at the store and save it to the folder where the tool resides.  The problem is that you must have purchased Win7 from the Store to get the file.\nIf you downloaded it from any other source (e.g., TechNetPlus) the file is unavailable to you.  \nIt is possible to find it in at least one location on the Web.  It ought to be available on Codeplex and/or TechNetPlus (at least).",
+    "LastUpdatedDate": "2016-03-31T20:53:11.1-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "wudt",
+    "ReportedDate": "2010-05-22T09:02:27.463-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "bootsect.exe issue",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 11,
+    "Id": 17777
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "bootsect.exe is included inside of the Windows 7 ISO, so you could grab it from there. It's not an ideal solution, but if you have downloaded from TechNetPlus or MSDN, you should have the ability to download the 32-bit version as well, then use something like 7-Zip to open the iso and pull bootsect.exe out of the boot directory.",
+      "PostedDate": "2011-09-02T22:00:37.953-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-02-29T12:23:09.327-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "KennySpade,\r\n\r\nThis doesn't work.  I was able to pull bootsect.exe from the .iso just as you said.  I put bootsect.exe in the same directory as the Windows DVD/USB tool.  But I get the same bootsect.exe cannot be run error at the end of the process to create the bootable USB windows drive.\r\n\r\nMy general problem is to simply replace my laptop HD with an SSD, when the only registered Windows copy I have is what the OEM installed on the laptop HD.  Everything fails.  Cloning the HD fails with every program I've tried (including the registered Norton Ghost that came with my SSD).  Creating bootable Windows drives fails however I try it.\r\n\r\nThis appears to be yet another case of DRM costing a legitimate paying customer days of time and frustration.  I don't mind how Windows works normally, but every time they put me through this kind of DRM torture, I try harder and harder to move toward open source software.",
+      "PostedDate": "2012-07-25T13:08:51.29-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T09:29:39.73-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T18:37:47.277-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "The computer you run bootsect from also be 64-bit. ",
+      "PostedDate": "2014-03-30T01:28:37.813-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I am able to use the WUDT tool on a Surface Pro running Windows 8.1 (64 bit) to make bootable USB from the following TechNet media:\r\n\r\n* en_windows_7_ultimate_with_sp1_x86_dvd_u_677460.iso\n* en_windows_8.1_with_update_x64_dvd_4065090.iso\r\n\r\nWhen I try to make bootable USB media from en_windows_7_ultimate_with_sp1_x64_dvd_u_677332.iso, I get the bootsect error. \r\n\r\nIf I copy bootsect.exe from this 677332.iso file into the AppData folder where the WUDT tool resides, I still get the error. If I attempt to run bootsect.exe from an elevated cmd prompt, I get an error: \"_This tool can only be run on systems booted using a PC/AT BIOS.  This system was booted using EFI or some other firmware type._\"\r\n\r\nThere appears to be no way to successfully create Win7 x64 bootable USB from a UEFI Win8.1 x64 system?",
+      "PostedDate": "2014-09-03T00:01:38.51-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2014-09-03T00:02:50.61-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2014-09-17T03:05:32.47-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hi,\r\n\r\nMy problem still remains! I run Windows XP x86, which is 32-bit, and that makes it impossible to create a BOOTABLE USB with any version of Windows that is a 64-bit OS.\r\n\r\nUsing unetBootin to create linux 64-bit bootable USB sticks on a 32-bit Windows Platform does work on the other hand.\r\n\r\nI also tried the trick, or better THE solution that Microsoft provides to create a working 64-bit Windows 7 bootable USB, with extracting bootsect.exe which at first site seemed to be working, no errors etc...\nToo bad that each computer or laptop I used to try install Win 7 64-bit, being sure that my USB drive is set as first bootable drive, failed.\r\n\r\nSo finally I used my MacBook Pro with OS X 10.9.2 and also tried it at the same time on my Ubuntu, which are both 64-bit operating systems, and now it works as a charm.\r\n\r\nSo the solution I propose is to use a Mac or even easier, if you don't have a Mac to use, is to just create a bootable Ubuntu USB, boot from that USB on any computer you can use and burn your Windows 7 / 8 or 8.1 64-bit to a DVD or just install it on a USB drive. You don't even need to partition or format the stick since the tool does it all.\r\n\r\nGood Luck!",
+      "PostedDate": "2014-09-17T03:30:45.453-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-07-27T08:23:10.093-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I had the same problem.\nMy solution was to copy \"C:\\Windows\\System32\\bootsect.exe\" from the PC running the Tool to the directory of the Tool (%LOCALAPPDATA%\\Apps\\USB DVD-Downloadtool für Windows 7\\).\r\n\r\nAfter this the Tool was able to finish creating the USB-Stick.",
+      "PostedDate": "2015-10-20T11:02:12.317-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2016-03-31T20:53:11.1-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

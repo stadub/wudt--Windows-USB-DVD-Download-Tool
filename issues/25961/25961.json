@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Newer UEFI based devices cannot boot using the ones created by USB / DVD tool as they only allow boot using Fat32 based discs. Can you please modify the code to provide a selectable option so users can toggle between NTFS / Fat32.",
+    "LastUpdatedDate": "2015-04-25T14:45:46.31-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "wudt",
+    "ReportedDate": "2015-02-03T04:12:22.243-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Fat32 support",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 6,
+    "Id": 25961
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "This should be addressed ASAP or at least have a big warning in it. There are NUMOROUS blog posts stating people can't boot from USB on their Surface Pros - most of them ended up having Surface Support exchanging their devices because even Surface support thinks this is a hardware problem. I even went through this and they opened a return ticket for me. It was just as I was getting ready to do this, I discovered UEFI devices can't boot from NTFS.",
+      "PostedDate": "2015-03-24T20:23:14.69-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-03-24T20:30:56.987-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-03-24T22:08:20.53-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-04-19T11:14:08.49-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-04-25T14:45:46.31-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

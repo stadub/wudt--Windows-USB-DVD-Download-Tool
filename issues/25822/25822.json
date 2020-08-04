@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "This tool does not support drives that are \"Fixed\", only the older style \"Removable\" devices.\n\nThere are alternate tools which can perform the same task as this tool such as Rufus (http://rufus.akeo.ie/)",
+    "LastUpdatedDate": "2015-09-08T11:53:03.513-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "wudt",
+    "ReportedDate": "2014-11-11T22:25:21.447-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Tool does not support Modern USB Drives",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 2,
+    "Id": 25822
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

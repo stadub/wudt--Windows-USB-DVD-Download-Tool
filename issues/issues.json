@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 17777,
+    "Title": "bootsect.exe issue"
+  },
+  {
+    "Id": 22718,
+    "Title": "We were unable to copy your files. Please check your USB device and the selected ISO file and try again."
+  },
+  {
+    "Id": 24312,
+    "Title": "Remove '7' from name"
+  },
+  {
+    "Id": 25820,
+    "Title": "Tool does not support USB Sticks bigger than 8Gb"
+  },
+  {
+    "Id": 25822,
+    "Title": "Tool does not support Modern USB Drives"
+  },
+  {
+    "Id": 25961,
+    "Title": "Fat32 support"
+  },
+  {
+    "Id": 63574,
+    "Title": "No source code"
+  },
+  {
+    "Id": 64982,
+    "Title": ".Net Framework Error"
+  },
+  {
+    "Id": 65216,
+    "Title": "Bug report: \"not a valid ISO file\""
+  },
+  {
+    "Id": 65335,
+    "Title": "Home page links are broken"
+  }
+]
