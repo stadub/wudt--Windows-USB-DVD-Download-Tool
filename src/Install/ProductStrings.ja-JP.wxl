@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="ja-JP" xmlns="http://schemas.microsoft.com/wix/2006/localization" Codepage="932">
+    <String Id="LANG">1041</String>
+    <String Id="ProductName">Windows 7 USB/DVD ダウンロード ツール</String>
+    <String Id="Manufacturer">Microsoft Corporation</String>
+    <String Id="FolderName">Windows 7 USB DVD ダウンロード ツール</String>
+    <String Id="ShortcutName">Windows 7 USB DVD ダウンロード ツール</String>
+    <String Id="ShortcutDescription">Launches the Windows 7 USB/DVD ダウンロード ツール</String>
+    <String Id="UninstallShortcutName">Uninstall Windows 7 USB DVD ダウンロード ツール</String>
+    <String Id="UninstallShortcutDescription">Uninstalls the Windows 7 USB/DVD ダウンロード ツール</String>
+    <String Id="DotNetFrameworkRequired">このアプリケーションには .NET Framework 2.0 が必要です。.NET Framework をインストールしてから、このインストーラーを再実行してください。</String>
+    <String Id="ImapiRequired">このアプリケーションには Image Mastering API v2 が必要です。Image Mastering API をインストールしてから、このインストーラーを再実行してください。</String>
+    <String Id="DotNetAndImapiRequired">このアプリケーションには .NET Framework 2.0 と Image Mastering API v2 が必要です。必須コンポーネントをインストールしてから、このインストーラーを再実行してください。</String>
+</WixLocalization>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="fr-FR" xmlns="http://schemas.microsoft.com/wix/2006/localization" Codepage="1252">
+    <String Id="LANG">1036</String>
+    <String Id="ProductName">Outil de téléchargement USB/DVD Windows 7</String>
+    <String Id="Manufacturer">Microsoft Corporation</String>
+    <String Id="FolderName">Outil de téléchargement USB DVD Windows 7</String>
+    <String Id="ShortcutName">Outil de téléchargement USB DVD Windows 7</String>
+    <String Id="ShortcutDescription">Launches the Outil de téléchargement USB/DVD Windows 7</String>
+    <String Id="UninstallShortcutName">Uninstall Outil de téléchargement USB DVD Windows 7</String>
+    <String Id="UninstallShortcutDescription">Uninstalls the Outil de téléchargement USB/DVD Windows 7</String>
+    <String Id="DotNetFrameworkRequired">Cette application nécessite .NET Framework 2.0. Installez .NET Framework, puis relancez le programme d'installation.</String>
+    <String Id="ImapiRequired">Cette application nécessite Image Mastering API v2. Installez Image Mastering API, puis relancez le programme d'installation.</String>
+    <String Id="DotNetAndImapiRequired">Cette application nécessite .NET Framework 2.0 et Image Mastering API v2. Installez les pré-requis, puis relancez le programme d'installation.</String>
+</WixLocalization>

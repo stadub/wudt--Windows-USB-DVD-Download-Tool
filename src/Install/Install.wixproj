@@ -1,0 +1,63 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <Culture Condition=" '$(Culture)' == '' ">en-US</Culture>
+    <Codepage Condition=" '$(Codepage)' == '' ">1252</Codepage>
+    <ProductVersion>3.0</ProductVersion>
+    <ProjectGuid>{530a81bb-534b-49d4-84f7-2821b5998c75}</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputName>Wudt</OutputName>
+    <OutputType>Package</OutputType>
+    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' AND '$(MSBuildExtensionsPath32)' != '' ">$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.0\Wix.targets</WixTargetsPath>
+    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.0\Wix.targets</WixTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <DefineConstants>Debug;Culture=$(Culture);Codepage=$(Codepage)</DefineConstants>
+    <Cultures>$(Culture)</Cultures>
+    <SuppressPdbOutput>True</SuppressPdbOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <DefineConstants>Culture=$(Culture);Codepage=$(Codepage)</DefineConstants>
+    <Cultures>$(Culture)</Cultures>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Product.wxs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ISOTool\MSStoreISOTool.csproj">
+      <Name>MSStoreISOTool</Name>
+      <Project>{18dd7489-77d0-43d4-b7b1-672bdd804e2c}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WixExtension Include="WixNetFxExtension">
+      <HintPath>$(WixExtDir)\WixNetFxExtension.dll</HintPath>
+    </WixExtension>
+    <WixExtension Include="WixUIExtension">
+      <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
+    </WixExtension>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProductStrings.en-AU.wxl" />
+    <EmbeddedResource Include="ProductStrings.en-GB.wxl" />
+    <EmbeddedResource Include="ProductStrings.en-US.wxl" />
+    <EmbeddedResource Include="ProductStrings.de-DE.wxl" />
+    <EmbeddedResource Include="ProductStrings.es-ES.wxl" />
+    <EmbeddedResource Include="ProductStrings.fr-FR.wxl" />
+    <EmbeddedResource Include="ProductStrings.it-IT.wxl" />
+    <EmbeddedResource Include="ProductStrings.ja-JP.wxl" />
+    <EmbeddedResource Include="ProductStrings.ko-KR.wxl" />
+    <EmbeddedResource Include="ProductStrings.nl-NL.wxl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CreateLocalizedInstallers.cmd" />
+    <Content Include="CreateSelfExtractingInstallers.cmd" />
+  </ItemGroup>
+  <Import Project="$(WixTargetsPath)" />
+</Project>

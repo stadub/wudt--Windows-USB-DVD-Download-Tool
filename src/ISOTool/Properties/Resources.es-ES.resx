@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConfirmCancelCaption" xml:space="preserve">
+    <value>Cancelar copia de seguridad</value>
+  </data>
+  <data name="ConfirmCancelMessage" xml:space="preserve">
+    <value>Hay una copia de seguridad en curso. Si cancelas la copia de seguridad, el soporte de datos quedará inutilizable. ¿Estás seguro de que deseas cancelarla?</value>
+  </data>
+  <data name="DefaultDriveLabel" xml:space="preserve">
+    <value>Disco extraíble</value>
+  </data>
+  <data name="DvdBurningProgress" xml:space="preserve">
+    <value>{0} (tiempo restante estimado {1})</value>
+  </data>
+  <data name="DvdFreeSpaceMessage" xml:space="preserve">
+    <value>No hay suficiente espacio disponible en el disco. Inserta un DVD en blanco y vuelve a intentarlo.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DvdImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DvdImage.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DvdNoDrivesMessage" xml:space="preserve">
+    <value>No se encuentra una unidad de DVD compatible. Asegúrate de que la unidad de DVD está conectada y tiene la capacidad de crear discos.</value>
+  </data>
+  <data name="DvdNoMediaMessage" xml:space="preserve">
+    <value>No hay ningún disco en la unidad. Inserta un disco y vuelve a intentarlo.</value>
+  </data>
+  <data name="DvdNotBlankMessage" xml:space="preserve">
+    <value>El disco no está en blanco. Inserta un DVD en blanco y vuelve a intentarlo.</value>
+  </data>
+  <data name="DvdNotReadyMessage" xml:space="preserve">
+    <value>La unidad está intentando leer el disco. Espera unos momentos y vuelve a intentarlo.</value>
+  </data>
+  <data name="DvdReadyMessage" xml:space="preserve">
+    <value>Estás preparado para la grabación. Haz clic en "Empezar a grabar" para crear el DVD de copia de seguridad.</value>
+  </data>
+  <data name="HelpLinkUrl" xml:space="preserve">
+    <value>http://go.microsoft.com/fwlink/?LinkId=163455&amp;clcid=0x40a</value>
+  </data>
+  <data name="IsoInvalidCaption" xml:space="preserve">
+    <value>Archivo ISO no válido</value>
+  </data>
+  <data name="IsoInvalidMessage" xml:space="preserve">
+    <value>El archivo seleccionado no es un archivo ISO válido. Selecciona un archivo ISO válido y vuelve a intentarlo.</value>
+  </data>
+  <data name="IsoNotSelectedCaption" xml:space="preserve">
+    <value>No hay un archivo ISO seleccionado</value>
+  </data>
+  <data name="IsoNotSelectedMessage" xml:space="preserve">
+    <value>Selecciona un archivo ISO.</value>
+  </data>
+  <data name="BeginBurningButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\es-ES\ES_ISO_begin_burning_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BeginCopyingButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\es-ES\ES_ISO_begin_copying_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BrowseButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\es-ES\ES_ISO_browse_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancelButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\es-ES\ES_ISO_cancel_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChangeUsbButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\es-ES\ES_ISO_change_USB_device.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CopyButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\es-ES\ES_ISO_copy_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DvdButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\es-ES\ES_ISO_DVD_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EraseUsbButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\es-ES\ES_ISO_erase_USB_device_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NextButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\es-ES\ES_ISO_next_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenDvdButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\es-ES\ES_ISO_open_DVD_drive_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenUsbButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\es-ES\ES_ISO_open_USB_device_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StartOverButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\es-ES\ES_ISO_start_over_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TryAgainButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\es-ES\ES_ISO_try_again_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UsbButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\es-ES\ES_ISO_USB_device_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MasterSprite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\es-ES\ES_DM_ISO_master_sprite.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RefreshButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RefreshButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RequireAdmin" xml:space="preserve">
+    <value>Esta aplicación requiere privilegios de administrador. Por favor, ejecuta la herramienta como administrador.</value>
+  </data>
+  <data name="StatusBurning" xml:space="preserve">
+    <value>Grabando disco...</value>
+  </data>
+  <data name="StatusCanceled" xml:space="preserve">
+    <value>Copia de seguridad cancelada. Haz clic en “Volver a empezar” para intentarlo de nuevo.</value>
+  </data>
+  <data name="StatusCanceling" xml:space="preserve">
+    <value>Cancelando...</value>
+  </data>
+  <data name="StatusComplete" xml:space="preserve">
+    <value>Copia de seguridad finalizada.</value>
+  </data>
+  <data name="StatusCopying" xml:space="preserve">
+    <value>Copiando archivos...</value>
+  </data>
+  <data name="StatusDvdError" xml:space="preserve">
+    <value>Error en el proceso de grabación. Comprueba la unidad de DVD y el archivo ISO seleccionado y vuelve a intentarlo.</value>
+  </data>
+  <data name="StatusFormatting" xml:space="preserve">
+    <value>Aplicando formato...</value>
+  </data>
+  <data name="StatusUsbError" xml:space="preserve">
+    <value>No hemos podido copiar los archivos. Comprueba el dispositivo USB y el archivo ISO y vuelve a intentarlo.</value>
+  </data>
+  <data name="TermsOfUseFileName" xml:space="preserve">
+    <value>TermsOfUse.rtf</value>
+  </data>
+  <data name="TitleDvd" xml:space="preserve">
+    <value>Paso 3 de 4: Insertar DVD en blanco</value>
+  </data>
+  <data name="TitleDvdProgress" xml:space="preserve">
+    <value>Paso 4 de 4: Crear DVD de arranque</value>
+  </data>
+  <data name="TitleDvdProgressComplete" xml:space="preserve">
+    <value>El DVD de arranque se ha creado correctamente</value>
+  </data>
+  <data name="TitleMain" xml:space="preserve">
+    <value>Paso 1 de 4: Elegir el archivo ISO</value>
+  </data>
+  <data name="TitleMediaType" xml:space="preserve">
+    <value>Paso 2 de 4: Elegir el tipo de soporte de datos</value>
+  </data>
+  <data name="TitleUsb" xml:space="preserve">
+    <value>Paso 3 de 4: Insertar la llave USB</value>
+  </data>
+  <data name="TitleUsbProgress" xml:space="preserve">
+    <value>Paso 4 de 4: Crear el dispositivo USB de arranque</value>
+  </data>
+  <data name="TitleUsbProgressComplete" xml:space="preserve">
+    <value>Dispositivo USB de arranque se ha creado correctamente</value>
+  </data>
+  <data name="ToolTitle" xml:space="preserve">
+    <value>Herramienta de copia de seguridad ISO de Microsoft</value>
+  </data>
+  <data name="UnhandledException" xml:space="preserve">
+    <value>Se ha producido un error inesperado. Si el problema continúa, ponte en contacto con el servicio de atención al cliente.</value>
+  </data>
+  <data name="UnhandledExceptionCaption" xml:space="preserve">
+    <value>Error de la aplicación</value>
+  </data>
+  <data name="UsbDefaultMessage" xml:space="preserve">
+    <value>Si no aparece el dispositivo, haz clic en "Actualizar".</value>
+  </data>
+  <data name="UsbDeviceNotFoundMessage" xml:space="preserve">
+    <value>No se encuentra el dispositivo seleccionado {0}. Comprueba que el dispositivo está bien conectado y haz clic en “Actualizar”.</value>
+  </data>
+  <data name="UsbDriveFormat" xml:space="preserve">
+    <value>{0} - {1} disponible</value>
+  </data>
+  <data name="UsbEraseConfirm" xml:space="preserve">
+    <value>Has decidido borrar todo el contenido del dispositivo USB seleccionado, {0}. Se perderá todo el contenido del dispositivo. ¿Estás seguro de que deseas continuar?</value>
+  </data>
+  <data name="UsbEraseMessage" xml:space="preserve">
+    <value>Para continuar, es necesario borrar el dispositivo USB seleccionado, {0}. ¿Deseas borrar todo el contenido de este dispositivo?</value>
+  </data>
+  <data name="UsbFreeSpaceCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="UsbFreeSpaceCaption" xml:space="preserve">
+    <value>No hay suficiente espacio disponible</value>
+  </data>
+  <data name="UsbFreeSpaceErase" xml:space="preserve">
+    <value>Borrar dispositivo USB</value>
+  </data>
+  <data name="UsbFreeSpaceMessage" xml:space="preserve">
+    <value>El dispositivo USB seleccionado, {0}, no tiene suficiente espacio disponible. Para continuar, es necesario borrar el contenido del dispositivo. ¿Deseas borrar todo el contenido del dispositivo seleccionado?</value>
+  </data>
+  <data name="UsbImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UsbImage.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UsbInUseMessage" xml:space="preserve">
+    <value>Otro programa está usando el dispositivo USB seleccionado, {0}. Cierra todas las aplicaciones y vuelve a intentarlo.</value>
+  </data>
+  <data name="UsbInvalidMessage" xml:space="preserve">
+    <value>El dispositivo USB seleccionado no es compatible con esta herramienta. Selecciona otro dispositivo USB y vuelve a intentarlo.</value>
+  </data>
+  <data name="UsbNoDrivesDropDown" xml:space="preserve">
+    <value>No se ha detectado ningún dispositivo USB compatible</value>
+  </data>
+  <data name="UsbNoDrivesMessage" xml:space="preserve">
+    <value>No se ha detectado ningún dispositivo USB extraíble compatible. Conecta un dispositivo USB con una capacidad de 4 GB o superior y haz clic en “Actualizar”.</value>
+  </data>
+  <data name="UsbOverwriteCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="UsbOverwriteCaption" xml:space="preserve">
+    <value>Los archivos ya existen</value>
+  </data>
+  <data name="UsbOverwriteConfirm" xml:space="preserve">
+    <value>Sobrescribir archivos</value>
+  </data>
+  <data name="UsbOverwriteMessage" xml:space="preserve">
+    <value>Hay archivos con el mismo nombre en {0}. ¿Deseas sobrescribirlos?</value>
+  </data>
+  <data name="UsbSizeMessage" xml:space="preserve">
+    <value>El dispositivo USB seleccionado, {0} no es lo suficientemente grande. Selecciona un dispositivo USB con capacidad de 4 GB o superior y vuelve a intentarlo.</value>
+  </data>
+  <data name="StatusBootloaderError" xml:space="preserve">
+    <value>Archivos copiados correctamente. No obstante, no se pudo ejecutar bootsect para que se pueda arrancar desde el dispositivo USB.  Si necesitas ayuda con bootsect, haz clic en el vínculo "Ayuda en pantalla" anterior para obtener más información.</value>
+  </data>
+</root>

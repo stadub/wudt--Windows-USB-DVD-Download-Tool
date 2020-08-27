@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="nl-NL" xmlns="http://schemas.microsoft.com/wix/2006/localization" Codepage="1252">
+    <String Id="LANG">1043</String>
+    <String Id="ProductName">Windows 7 downloadprogramma voor USB/DVD</String>
+    <String Id="Manufacturer">Microsoft Corporation</String>
+    <String Id="FolderName">Windows 7 downloadprogramma voor USB DVD</String>
+    <String Id="ShortcutName">Windows 7 downloadprogramma voor USB DVD</String>
+    <String Id="ShortcutDescription">Launches the Windows 7 downloadprogramma voor USB/DVD</String>
+    <String Id="UninstallShortcutName">Uninstall Windows 7 downloadprogramma voor USB DVD</String>
+    <String Id="UninstallShortcutDescription">Uninstalls the Windows 7 downloadprogramma voor USB/DVD</String>
+    <String Id="DotNetFrameworkRequired">Voor deze toepassing is .NET Framework 2.0 vereist. Installeer .NET Framework en voer vervolgens dit installatieprogramma opnieuw uit.</String>
+    <String Id="ImapiRequired">Voor deze toepassing is Image Mastering API v2 vereist. Installeer Image Mastering API en voer vervolgens dit installatieprogramma opnieuw uit.</String>
+    <String Id="DotNetAndImapiRequired">Voor deze toepassing zijn .NET Framework 2.0 en Image Mastering API v2 vereist. Installeer de vereiste onderdelen en voer vervolgens dit installatieprogramma opnieuw uit.</String>
+</WixLocalization>

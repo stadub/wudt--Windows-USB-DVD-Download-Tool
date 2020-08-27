@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConfirmCancelCaption" xml:space="preserve">
+    <value>백업 취소</value>
+  </data>
+  <data name="ConfirmCancelMessage" xml:space="preserve">
+    <value>백업이 진행 중입니다. 백업을 취소하면 미디어가 잘못된 상태로 남게 됩니다. 취소하시겠습니까?</value>
+  </data>
+  <data name="DefaultDriveLabel" xml:space="preserve">
+    <value>이동식 디스크</value>
+  </data>
+  <data name="DvdBurningProgress" xml:space="preserve">
+    <value>{0}(남은 시간: {1})</value>
+  </data>
+  <data name="DvdFreeSpaceMessage" xml:space="preserve">
+    <value>디스크의 사용 가능한 공간이 부족합니다. 빈 DVD를 넣고 다시 시도하십시오.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DvdImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DvdImage.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DvdNoDrivesMessage" xml:space="preserve">
+    <value>호환되는 DVD 장치를 찾을 수 없습니다. 디스크 쓰기가 가능한 DVD 드라이브가 연결되어 있는지 확인하십시오.</value>
+  </data>
+  <data name="DvdNoMediaMessage" xml:space="preserve">
+    <value>드라이브에 디스크가 없습니다. 빈 디스크를 넣고 다시 시도하십시오.</value>
+  </data>
+  <data name="DvdNotBlankMessage" xml:space="preserve">
+    <value>빈 디스크가 아닙니다. 빈 DVD를 넣고 다시 시도하십시오.</value>
+  </data>
+  <data name="DvdNotReadyMessage" xml:space="preserve">
+    <value>DVD 드라이브에서 디스크를 읽고 있습니다. 잠시 기다린 후 다시 시도하십시오.</value>
+  </data>
+  <data name="DvdReadyMessage" xml:space="preserve">
+    <value>디스크를 구울 준비가 되었습니다. 백업 DVD를 만들려면 [굽기 시작]을 클릭하십시오.</value>
+  </data>
+  <data name="HelpLinkUrl" xml:space="preserve">
+    <value>http://go.microsoft.com/fwlink/?LinkId=163455&amp;clcid=0x412</value>
+  </data>
+  <data name="IsoInvalidCaption" xml:space="preserve">
+    <value>잘못된 ISO 파일</value>
+  </data>
+  <data name="IsoInvalidMessage" xml:space="preserve">
+    <value>선택한 파일은 올바른 ISO 파일이 아닙니다. 올바른 ISO 파일을 선택하고 다시 시도하십시오.</value>
+  </data>
+  <data name="IsoNotSelectedCaption" xml:space="preserve">
+    <value>선택한 ISO 파일 없음</value>
+  </data>
+  <data name="IsoNotSelectedMessage" xml:space="preserve">
+    <value>ISO 파일을 선택하십시오.</value>
+  </data>
+  <data name="BeginBurningButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-KR\KO_ISO_begin_burning_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BeginCopyingButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-KR\KO_ISO_begin_copying_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BrowseButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-KR\KO_ISO_browse_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancelButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-KR\KO_ISO_cancel_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChangeUsbButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-KR\KO_ISO_change_USB_device.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CopyButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-KR\KO_ISO_copy_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DvdButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-KR\KO_ISO_DVD_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EraseUsbButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-KR\KO_ISO_erase_USB_device_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NextButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-KR\KO_ISO_next_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenDvdButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-KR\KO_ISO_open_DVD_drive_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenUsbButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-KR\KO_ISO_open_USB_device_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StartOverButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-KR\KO_ISO_start_over_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TryAgainButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-KR\KO_ISO_try_again_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UsbButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-KR\KO_ISO_USB_device_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MasterSprite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ko-KR\KO_DM_ISO_master_sprite.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RefreshButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RefreshButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RequireAdmin" xml:space="preserve">
+    <value>이 응용프로그램은 관리자 권한이 필요합니다. 관리자 권한으로 다시 시작하세요.</value>
+  </data>
+  <data name="StatusBurning" xml:space="preserve">
+    <value>디스크를 굽는 중...</value>
+  </data>
+  <data name="StatusCanceled" xml:space="preserve">
+    <value>백업이 취소되었습니다. 다시 시도하려면 [다시 시작]을 클릭하십시오.</value>
+  </data>
+  <data name="StatusCanceling" xml:space="preserve">
+    <value>취소하는 중...</value>
+  </data>
+  <data name="StatusComplete" xml:space="preserve">
+    <value>백업이 완료되었습니다.</value>
+  </data>
+  <data name="StatusCopying" xml:space="preserve">
+    <value>파일을 복사하는 중...</value>
+  </data>
+  <data name="StatusDvdError" xml:space="preserve">
+    <value>굽기 프로세스를 완료하지 못했습니다. DVD 드라이브와 선택한 ISO 파일을 확인하고 다시 시도하십시오.</value>
+  </data>
+  <data name="StatusFormatting" xml:space="preserve">
+    <value>포맷하는 중...</value>
+  </data>
+  <data name="StatusUsbError" xml:space="preserve">
+    <value>파일을 복사할 수 없습니다. USB 장치와 선택한 ISO 파일을 확인하고 다시 시도하십시오.</value>
+  </data>
+  <data name="TermsOfUseFileName" xml:space="preserve">
+    <value>TermsOfUse.rtf</value>
+  </data>
+  <data name="TitleDvd" xml:space="preserve">
+    <value>3/4 단계: 빈 DVD 삽입</value>
+  </data>
+  <data name="TitleDvdProgress" xml:space="preserve">
+    <value>4/4 단계: 부팅 가능한 DVD 만들기</value>
+  </data>
+  <data name="TitleDvdProgressComplete" xml:space="preserve">
+    <value>부팅 가능한 DVD를 만들었습니다.</value>
+  </data>
+  <data name="TitleMain" xml:space="preserve">
+    <value>1/4 단계: ISO 파일 선택</value>
+  </data>
+  <data name="TitleMediaType" xml:space="preserve">
+    <value>2/4 단계: 미디어 유형 선택</value>
+  </data>
+  <data name="TitleUsb" xml:space="preserve">
+    <value>3/4 단계: USB 키 삽입</value>
+  </data>
+  <data name="TitleUsbProgress" xml:space="preserve">
+    <value>4/4 단계: 부팅 가능한 USB 장치 만들기</value>
+  </data>
+  <data name="TitleUsbProgressComplete" xml:space="preserve">
+    <value>부팅 가능한 USB 장치를 만들었습니다.</value>
+  </data>
+  <data name="ToolTitle" xml:space="preserve">
+    <value>Microsoft ISO 백업 도구</value>
+  </data>
+  <data name="UnhandledException" xml:space="preserve">
+    <value>예기치 않은 오류가 발생했습니다. 문제가 계속되면 지원 부서에 문의하십시오.</value>
+  </data>
+  <data name="UnhandledExceptionCaption" xml:space="preserve">
+    <value>응용 프로그램 오류</value>
+  </data>
+  <data name="UsbDefaultMessage" xml:space="preserve">
+    <value>장치가 표시되지 않으면 [새로 고침]을 클릭하십시오.</value>
+  </data>
+  <data name="UsbDeviceNotFoundMessage" xml:space="preserve">
+    <value>선택한 USB 장치 {0}을(를) 찾을 수 없습니다. 드라이브가 올바르게 연결되어 있는지 확인하고 [새로 고침]을 클릭하십시오.</value>
+  </data>
+  <data name="UsbDriveFormat" xml:space="preserve">
+    <value>{0} - {1} 사용 가능</value>
+  </data>
+  <data name="UsbEraseConfirm" xml:space="preserve">
+    <value>선택한 USB 장치 {0}의 내용을 모두 지웁니다. 이 장치의 내용을 모두 잃게 됩니다. 계속하시겠습니까?</value>
+  </data>
+  <data name="UsbEraseMessage" xml:space="preserve">
+    <value>계속하려면 선택한 USB 장치 {0}을(를) 지워야 합니다. 이 장치의 내용을 모두 지우시겠습니까?</value>
+  </data>
+  <data name="UsbFreeSpaceCancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="UsbFreeSpaceCaption" xml:space="preserve">
+    <value>사용 가능한 공간 부족</value>
+  </data>
+  <data name="UsbFreeSpaceErase" xml:space="preserve">
+    <value>USB 장치 지우기</value>
+  </data>
+  <data name="UsbFreeSpaceMessage" xml:space="preserve">
+    <value>선택한 USB 장치 {0}에 사용 가능한 공간이 부족합니다. 계속하려면 장치의 내용을 지워야 합니다. 선택한 장치에서 내용을 모두 지우시겠습니까?</value>
+  </data>
+  <data name="UsbImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UsbImage.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UsbInUseMessage" xml:space="preserve">
+    <value>다른 프로그램이 선택한 USB 장치 {0}을(를) 사용하고 있습니다. 응용 프로그램을 모두 닫고 다시 시도하십시오.</value>
+  </data>
+  <data name="UsbInvalidMessage" xml:space="preserve">
+    <value>선택한 USB 장치가 이 도구와 호환되지 않습니다. 다른 USB 장치를 선택하고 다시 시도하십시오.</value>
+  </data>
+  <data name="UsbNoDrivesDropDown" xml:space="preserve">
+    <value>호환되는 USB 장치 없음</value>
+  </data>
+  <data name="UsbNoDrivesMessage" xml:space="preserve">
+    <value>호환되는 이동식 USB 장치가 검색되지 않았습니다. 4GB 이상의 USB 장치를 연결하고 [새로 고침]을 클릭하십시오.</value>
+  </data>
+  <data name="UsbOverwriteCancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="UsbOverwriteCaption" xml:space="preserve">
+    <value>파일이 이미 있음</value>
+  </data>
+  <data name="UsbOverwriteConfirm" xml:space="preserve">
+    <value>파일 덮어쓰기</value>
+  </data>
+  <data name="UsbOverwriteMessage" xml:space="preserve">
+    <value>{0}에 같은 이름의 파일이 이미 있습니다. 해당 파일을 덮어쓰시겠습니까?</value>
+  </data>
+  <data name="UsbSizeMessage" xml:space="preserve">
+    <value>선택한 USB 장치 {0}의 용량이 충분하지 않습니다. 4GB 이상의 USB 장치를 선택하고 다시 시도하십시오.</value>
+  </data>
+  <data name="StatusBootloaderError" xml:space="preserve">
+    <value>파일이 성공적으로 복사되었습니다. 그러나 USB 장치를 부팅 가능하게 해 주는 부트 섹트를 실행할 수 없습니다. 부트 섹트에 대한 지원이 필요한 경우 위의 "온라인 도움말" 링크를 클릭하여 자세한 내용을 참조하십시오.</value>
+  </data>
+</root>

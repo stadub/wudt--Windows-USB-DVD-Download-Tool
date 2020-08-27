@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="de-DE" xmlns="http://schemas.microsoft.com/wix/2006/localization" Codepage="1252">
+    <String Id="LANG">1031</String>
+    <String Id="ProductName">USB/DVD-Downloadtool für Windows 7</String>
+    <String Id="Manufacturer">Microsoft Corporation</String>
+    <String Id="FolderName">USB DVD-Downloadtool für Windows 7</String>
+    <String Id="ShortcutName">USB DVD-Downloadtool für Windows 7</String>
+    <String Id="ShortcutDescription">Launches the USB/DVD-Downloadtool für Windows 7</String>
+    <String Id="UninstallShortcutName">Uninstall USB DVD-Downloadtool für Windows 7</String>
+    <String Id="UninstallShortcutDescription">Uninstalls the USB/DVD-Downloadtool für Windows 7</String>
+    <String Id="DotNetFrameworkRequired">Für diese Anwendung ist .NET Framework 2.0 erforderlich. Installieren Sie .NET Framework, und führen Sie anschließend das Installationsprogramm erneut aus.</String>
+    <String Id="ImapiRequired">Für diese Anwendung ist die Image Mastering-API v2 erforderlich. Installieren Sie die Image Mastering-API , und führen Sie anschließend das Installationsprogramm erneut aus.</String>
+    <String Id="DotNetAndImapiRequired">Für diese Anwendung sind .NET Framework 2.0 und die Image Mastering-API v2 erforderlich. Installieren Sie die erforderlichen Programme, und führen Sie anschließend das Installationsprogramm erneut aus.</String>
+</WixLocalization>

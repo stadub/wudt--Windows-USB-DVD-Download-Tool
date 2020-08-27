@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="es-ES" xmlns="http://schemas.microsoft.com/wix/2006/localization" Codepage="1252">
+    <String Id="LANG">3082</String>
+    <String Id="ProductName">Herramienta de descarga USB/DVD de Windows 7</String>
+    <String Id="Manufacturer">Microsoft Corporation</String>
+    <String Id="FolderName">Herramienta de descarga USB DVD de Windows 7</String>
+    <String Id="ShortcutName">Herramienta de descarga USB DVD de Windows 7</String>
+    <String Id="ShortcutDescription">Launches the Herramienta de descarga USB/DVD de Windows 7</String>
+    <String Id="UninstallShortcutName">Uninstall Herramienta de descarga USB DVD de Windows 7</String>
+    <String Id="UninstallShortcutDescription">Uninstalls the Herramienta de descarga USB/DVD de Windows 7</String>
+    <String Id="DotNetFrameworkRequired">Esta aplicación necesita .NET Framework 2.0. Instala .NET Framework y ejecuta de nuevo este instalador.</String>
+    <String Id="ImapiRequired">Esta aplicación necesita la API de procesamiento de imágenes v2. Instala la API de procesamiento de imágenes y ejecuta de nuevo este instalador.</String>
+    <String Id="DotNetAndImapiRequired">Esta aplicación necesita .NET Framework 2.0 y la API de procesamiento de imágenes v2. Instala los requisitos previos y ejecuta de nuevo este instalador.</String>
+</WixLocalization>

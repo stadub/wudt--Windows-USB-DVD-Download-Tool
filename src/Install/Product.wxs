@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+    <Product Id="*"
+             Name="!(loc.ProductName)"
+             Language="!(loc.LANG)"
+             Version="1.0.30"
+             Manufacturer="!(loc.Manufacturer)"
+             UpgradeCode="dac6361e-0049-4500-a07b-8ce2d8f1138e"
+             Codepage="$(var.Codepage)">
+
+        <Package Id="*"
+                 Description="!(loc.ProductName)"
+                 Manufacturer="!(loc.Manufacturer)"
+                 InstallerVersion="200"
+                 Compressed="yes"
+                 InstallPrivileges="limited" />
+
+        <PropertyRef Id="NETFRAMEWORK20"/>
+
+        <Property Id="IMAPIINSTALLED">
+            <RegistrySearch Id="Imapi" 
+                            Root="HKLM" 
+                            Key="SOFTWARE\Microsoft\Windows NT\CurrentVersion\HotFix\KB932716-v2" 
+                            Name="Installed" 
+                            Type="raw"
+                            Win64="yes" />
+        </Property>
+
+        <Condition Message="!(loc.DotNetAndImapiRequired)">
+            <![CDATA[Installed OR NETFRAMEWORK20 OR ((VersionNT >= 600) OR IMAPIINSTALLED)]]>
+        </Condition>
+
+        <Condition Message="!(loc.DotNetFrameworkRequired)">
+            <![CDATA[Installed OR NETFRAMEWORK20]]>
+        </Condition>
+
+        <Condition Message="!(loc.ImapiRequired)">
+            <![CDATA[Installed OR (VersionNT >= 600) OR IMAPIINSTALLED]]>
+        </Condition>
+
+        <Upgrade Id="dac6361e-0049-4500-a07b-8ce2d8f1138e">
+            <UpgradeVersion Minimum="0.0.0.0" IncludeMinimum="yes" Maximum="1.0.30" IncludeMaximum="no" OnlyDetect="no" Property="PREVIOUSVERSION" />
+            <UpgradeVersion Minimum="1.0.30" IncludeMinimum="no" OnlyDetect="yes" Property="NEWERVERSIONDETECTED" />
+        </Upgrade>
+
+        <InstallExecuteSequence>
+            <RemoveExistingProducts After="InstallInitialize" />
+        </InstallExecuteSequence>
+
+        <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+
+        <Property Id="ALLUSERS" Secure="yes"/>
+
+        <Icon Id="icons.exe" SourceFile="$(var.MSStoreISOTool.ProjectDir)..\$(var.Configuration)\dmcicons.dll" />
+
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="LocalAppDataFolder">
+                <Directory Id="Apps" Name="Apps">
+                    <Directory Id="INSTALLDIR" Name="!(loc.FolderName)">
+                        <Directory Id="LogDir" Name="Log" />
+                    <?if $(var.Culture) != en-US ?>
+                        <Directory Id="ResourcesDir" Name="$(var.Culture)">
+                            <Component Id="ResourceComponent" DiskId="1" Guid="7121DF56-62B6-4761-B625-19C2E75A13EF">
+                                <File Id="ResourceDll" Source="$(var.MSStoreISOTool.TargetDir)$(var.Culture)\Windows7-USB-DVD-Download-Tool.resources.dll" />
+
+                                <RegistryKey Root="HKCU" Key="SOFTWARE\Microsoft\ISO Backup Tool">
+                                    <RegistryValue Name="Version" Value="[ProductVersion]" Type="string" KeyPath="yes" />
+                                </RegistryKey>
+
+                                <RemoveFolder Id="RemoveResourcesDir" On="uninstall" />
+                            </Component>
+                        </Directory>
+                    <?endif ?>
+                        <Component Id="IsoToolComponent" DiskId="1" Guid="DD1210CC-2CFE-403c-B7B4-E72C7D75E8F5">
+                            <File Id="ToolExe" Source="$(var.MSStoreISOTool.TargetPath)">
+                                <Shortcut Id="StartMenuShortcut"
+                                          Name="!(loc.ShortcutName)"
+                                          Directory="ShortcutFolder"
+                                          WorkingDirectory="INSTALLDIR"
+                                          Description="!(loc.ShortcutDescription)"
+                                          Icon="icons.exe" />
+
+                                <Shortcut Id="DesktopShortcut"
+                                          Name="!(loc.ShortcutName)"
+                                          Directory="DesktopFolder"
+                                          WorkingDirectory="INSTALLDIR"
+                                          Description="!(loc.ShortcutDescription)"
+                                          Icon="icons.exe" />
+                            </File>
+                            <File Id="Readme" Source="$(var.MSStoreISOTool.ProjectDir)README" ReadOnly="yes" />
+                            <File Id="License" Source="$(var.MSStoreISOTool.ProjectDir)COPYING" ReadOnly="yes" />
+                            <File Id="Source" Source="$(var.MSStoreISOTool.ProjectDir)..\wudtsource.zip" />
+                            <File Id="IoWrapperDll" Source="$(var.MSStoreISOTool.TargetDir)IoWrapper.dll" />
+                        <?if $(var.Configuration) = Debug ?>
+                            <File Id="ToolExeDebugSymbols" Source="$(var.MSStoreISOTool.TargetDir)Windows7-USB-DVD-Download-Tool.pdb"></File>
+                        <?endif ?>
+
+                            <RegistryKey Root="HKCU" Key="SOFTWARE\Microsoft\ISO Backup Tool">
+                                <RegistryValue Name="Version" Value="[ProductVersion]" Type="string" KeyPath="yes" />
+                            </RegistryKey>
+
+                            <RemoveFile Id="ReomveLogFiles" Directory="LogDir" Name="*" On="uninstall" />
+                            <RemoveFolder Id="RemoveLogDir" Directory="LogDir" On="uninstall" />
+                            <RemoveFolder Id="RemoveInstallDir" On="uninstall" />
+                            <RemoveFolder Id="RemoveAppDir" Directory="Apps" On="uninstall" />
+                        </Component>
+                    </Directory>
+                </Directory>
+            </Directory>
+            <Directory Id="ProgramMenuFolder">
+                <Directory Id="ShortcutFolder" Name="!(loc.FolderName)">
+                    <Component Id="StartMenuComponent" Guid="41664F15-4282-4fc5-8C82-F96ADB10A82C">
+                        <Shortcut Id="UninstallProduct"
+                                  Name="!(loc.UninstallShortcutName)"
+                                  Target="[System64Folder]msiexec.exe"
+                                  Arguments="/x [ProductCode]"
+                                  Directory="ShortcutFolder"
+                                  Description="!(loc.UninstallShortcutDescription)" />
+
+                        <RegistryKey Root="HKCU" Key="SOFTWARE\Microsoft\ISO Backup Tool">
+                            <RegistryValue Name="Shortcut" Value="1" Type="string" KeyPath="yes" />
+                        </RegistryKey>
+
+                        <RemoveFolder Id="RemoveShorcutDir" On="uninstall" />
+                    </Component>
+                </Directory>
+            </Directory>
+            <Directory Id="DesktopFolder"></Directory>
+        </Directory>
+
+        <UI Id="WixUI_InstallDir">
+            <TextStyle Id="WixUI_Font_Normal" FaceName="Tahoma" Size="8" />
+            <TextStyle Id="WixUI_Font_Bigger" FaceName="Tahoma" Size="12" />
+            <TextStyle Id="WixUI_Font_Title" FaceName="Tahoma" Size="9" Bold="yes" />
+
+            <Property Id="DefaultUIFont" Value="WixUI_Font_Normal" />
+            <Property Id="WixUI_Mode" Value="InstallDir" />
+
+            <DialogRef Id="BrowseDlg" />
+            <DialogRef Id="DiskCostDlg" />
+            <DialogRef Id="ErrorDlg" />
+            <DialogRef Id="FatalError" />
+            <DialogRef Id="FilesInUse" />
+            <DialogRef Id="MsiRMFilesInUse" />
+            <DialogRef Id="PrepareDlg" />
+            <DialogRef Id="ProgressDlg" />
+            <DialogRef Id="ResumeDlg" />
+            <DialogRef Id="UserExit" />
+
+            <Publish Dialog="ExitDialog" Control="Finish" Event="EndDialog" Value="Return" Order="999">1</Publish>
+
+            <Publish Dialog="WelcomeDlg" Control="Next" Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
+
+            <Publish Dialog="VerifyReadyDlg" Control="Back" Event="NewDialog" Value="WelcomeDlg" Order="1">NOT Installed</Publish>
+            <Publish Dialog="VerifyReadyDlg" Control="Back" Event="NewDialog" Value="MaintenanceTypeDlg" Order="2">Installed</Publish>
+
+            <Publish Dialog="MaintenanceWelcomeDlg" Control="Next" Event="NewDialog" Value="MaintenanceTypeDlg">1</Publish>
+
+            <Publish Dialog="MaintenanceTypeDlg" Control="RepairButton" Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
+            <Publish Dialog="MaintenanceTypeDlg" Control="RemoveButton" Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
+            <Publish Dialog="MaintenanceTypeDlg" Control="Back" Event="NewDialog" Value="MaintenanceWelcomeDlg">1</Publish>
+
+            <Property Id="ARPNOMODIFY" Value="1" />
+        </UI>
+
+        <UIRef Id="WixUI_Common" />
+        <UIRef Id="WixUI_ErrorProgressText" />
+
+        <Feature Id="ProductFeature" Title="Microsoft ISO Backup Tool" Description="ISO Backup Tool" ConfigurableDirectory="INSTALLDIR" Level="1">
+            <ComponentRef Id="IsoToolComponent" />
+            <ComponentRef Id="StartMenuComponent" />
+        <?if $(var.Culture) != en-US ?>
+            <ComponentRef Id="ResourceComponent" />
+        <?endif?>
+        </Feature>
+    </Product>
+</Wix>
