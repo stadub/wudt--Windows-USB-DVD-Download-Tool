@@ -81,10 +81,10 @@ ZipFile.CreateFromDirectory(sln, zipPath, CompressionLevel.Fastest, true);
     <SelfZip />
   </Target> -->
 
- <Target Name="DownloadContentFiles" BeforeTargets="Build">
+ <Target Name="DownloadContentFiles" BeforeTargets="Build;Light;HarvestDirectory">
         <DownloadFile
             SourceUrl="https://github.com/stadub/wudt--Windows-USB-DVD-Download-Tool/archive/master.zip"
-            DestinationFolder="$(MSBuildProjectDirectory)" DestinationFileName="wudtsource.zip"> 
+            DestinationFolder="$(MSBuildProjectDirectory)\..\" DestinationFileName="wudtsource.zip"> 
         <Output TaskParameter="DownloadedFile" ItemName="Content" />
       </DownloadFile>
     </Target>

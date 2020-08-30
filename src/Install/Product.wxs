@@ -90,7 +90,7 @@
                             </File>
                             <File Id="Readme" Source="$(var.MSStoreISOTool.ProjectDir)README" ReadOnly="yes" />
                             <File Id="License" Source="$(var.MSStoreISOTool.ProjectDir)COPYING" ReadOnly="yes" />
-                            <File Id="Source" Source="$(var.MSStoreISOTool.ProjectDir)wudtsource.zip" />
+                            <File Id="Source" Source="$(var.MSStoreISOTool.ProjectDir)\..\wudtsource.zip" />
                             <File Id="IoWrapperDll" Source="$(var.MSStoreISOTool.TargetDir)IoWrapper.dll" />
                         <?if $(var.Configuration) = Debug ?>
                             <File Id="ToolExeDebugSymbols" Source="$(var.MSStoreISOTool.TargetDir)Windows7-USB-DVD-Download-Tool.pdb"></File>
