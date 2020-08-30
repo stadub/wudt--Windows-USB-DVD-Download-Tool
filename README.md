@@ -1,4 +1,4 @@
-# 💿 Windows 7-8.1 USB/DVD Download Tool (wudt)
+# Windows 7-8.1 USB/DVD Download Tool (wudt)
 
 `This reposotory cloned from the official Windows USB/DVD Download Tool Codeplex `[repository](https://archive.codeplex.com/?p=wudt)` all issues also migrated`
 
@@ -26,8 +26,9 @@ The copy of the ISO file that the Windows USB/DVD Download tool creates is boota
 
 The following applications must be installed prior to installing the tool:
 
-•Microsoft .NET Framework v4.6.2 must be installed. It can be downloaded at https://www.microsoft.com/en-us/download/details.aspx?id=53344 .
-•Microsoft Image Mastering API v2 must be installed. It can be downloaded at http://www.microsoft.com/downloads/details.aspx?FamilyId=B5F726F1-4ACE-455D-BAD7-ABC4DD2F147B&displaylang=en.
+*Microsoft .NET Framework v4.6.2 must be installed. It can be downloaded at https://www.microsoft.com/en-us/download/details.aspx?id=53344 .
+
+*Microsoft Image Mastering API v2 must be installed. It can be downloaded at http://www.microsoft.com/downloads/details.aspx?FamilyId=B5F726F1-4ACE-455D-BAD7-ABC4DD2F147B&displaylang=en.
 
 
 ## 📈 Changelog
