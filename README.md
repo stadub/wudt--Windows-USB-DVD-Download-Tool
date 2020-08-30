@@ -4,9 +4,13 @@ Windows USB/DVD Download Tool Codeplex [repository](https://archive.codeplex.com
 
 Changes over original package:
 
-* Updated .net framework version to 4.6.2
-* Migrated to Visual studio 2019
-* Some minor changes
+* Added Windows ISO download link
+* Fixed home link #9
+* Migrated solution to Visual Studio 2019
+* Updated Wix to version 3.5
+* Compiled via .net version 4.6.2 (make the tool work on the Windows 10 without .net 2.0 installation) #7
+* Rename to Windows 7-8.1 USB/DVD download tool #3
+
 
 wudt
 Windows USB/DVD Download Tool
