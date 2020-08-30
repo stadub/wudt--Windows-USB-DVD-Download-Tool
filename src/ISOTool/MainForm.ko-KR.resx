@@ -1700,7 +1700,7 @@
     <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Windows 7 USB/DVD 다운로드 도구</value>
+    <value>Windows 7-8.1 USB/DVD 다운로드 도구</value>
   </data>
   <data name="btnBackupStartOver.AccessibleName" xml:space="preserve">
     <value>다시 시작</value>

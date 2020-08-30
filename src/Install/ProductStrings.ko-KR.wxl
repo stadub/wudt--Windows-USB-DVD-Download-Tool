@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WixLocalization Culture="ko-KR" xmlns="http://schemas.microsoft.com/wix/2006/localization" Codepage="949">
     <String Id="LANG">1042</String>
-    <String Id="ProductName">Windows 7 USB/DVD 다운로드 도구</String>
+    <String Id="ProductName">Windows 7-8.1 USB/DVD 다운로드 도구</String>
     <String Id="Manufacturer">Microsoft Corporation</String>
-    <String Id="FolderName">Windows 7 USB DVD 다운로드 도구</String>
-    <String Id="ShortcutName">Windows 7 USB DVD 다운로드 도구</String>
-    <String Id="ShortcutDescription">Launches the Windows 7 USB/DVD 다운로드 도구</String>
-    <String Id="UninstallShortcutName">Uninstall Windows 7 USB DVD 다운로드 도구</String>
-    <String Id="UninstallShortcutDescription">Uninstalls the Windows 7 USB/DVD 다운로드 도구</String>
+    <String Id="FolderName">Windows 7-8.1 USB DVD 다운로드 도구</String>
+    <String Id="ShortcutName">Windows 7-8.1 USB DVD 다운로드 도구</String>
+    <String Id="ShortcutDescription">Launches the Windows 7-8.1 USB/DVD 다운로드 도구</String>
+    <String Id="UninstallShortcutName">Uninstall Windows 7-8.1 USB DVD 다운로드 도구</String>
+    <String Id="UninstallShortcutDescription">Uninstalls the Windows 7-8.1 USB/DVD 다운로드 도구</String>
     <String Id="DotNetFrameworkRequired">이 응용 프로그램은 .NET Framework 4.6.2이 필요합니다. .NET Framework를 설치한 다음 이 설치 관리자를 다시 실행하십시오.</String>
     <String Id="ImapiRequired">이 응용 프로그램은 Image Mastering API v2가 필요합니다. Image Mastering API를 설치한 다음 이 설치 관리자를 다시 실행하십시오.</String>
     <String Id="DotNetAndImapiRequired">이 응용 프로그램은 .NET Framework 4.6.2 및 Image Mastering API v2가 필요합니다. 필수 구성 요소를 설치한 다음 이 설치 관리자를 다시 실행하십시오.</String>
