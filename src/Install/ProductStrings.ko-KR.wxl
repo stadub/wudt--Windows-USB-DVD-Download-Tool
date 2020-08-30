@@ -8,9 +8,9 @@
     <String Id="ShortcutDescription">Launches the Windows 7 USB/DVD 다운로드 도구</String>
     <String Id="UninstallShortcutName">Uninstall Windows 7 USB DVD 다운로드 도구</String>
     <String Id="UninstallShortcutDescription">Uninstalls the Windows 7 USB/DVD 다운로드 도구</String>
-    <String Id="DotNetFrameworkRequired">이 응용 프로그램은 .NET Framework 2.0이 필요합니다. .NET Framework를 설치한 다음 이 설치 관리자를 다시 실행하십시오.</String>
+    <String Id="DotNetFrameworkRequired">이 응용 프로그램은 .NET Framework 4.6.2이 필요합니다. .NET Framework를 설치한 다음 이 설치 관리자를 다시 실행하십시오.</String>
     <String Id="ImapiRequired">이 응용 프로그램은 Image Mastering API v2가 필요합니다. Image Mastering API를 설치한 다음 이 설치 관리자를 다시 실행하십시오.</String>
-    <String Id="DotNetAndImapiRequired">이 응용 프로그램은 .NET Framework 2.0 및 Image Mastering API v2가 필요합니다. 필수 구성 요소를 설치한 다음 이 설치 관리자를 다시 실행하십시오.</String>
+    <String Id="DotNetAndImapiRequired">이 응용 프로그램은 .NET Framework 4.6.2 및 Image Mastering API v2가 필요합니다. 필수 구성 요소를 설치한 다음 이 설치 관리자를 다시 실행하십시오.</String>
 
     <String Id="WixUIBack" Overridable="yes">&amp;Back</String>
     <String Id="WixUINext" Overridable="yes">&amp;Next</String>

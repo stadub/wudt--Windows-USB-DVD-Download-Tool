@@ -8,7 +8,7 @@
     <String Id="ShortcutDescription">Launches the Herramienta de descarga USB/DVD de Windows 7</String>
     <String Id="UninstallShortcutName">Uninstall Herramienta de descarga USB DVD de Windows 7</String>
     <String Id="UninstallShortcutDescription">Uninstalls the Herramienta de descarga USB/DVD de Windows 7</String>
-    <String Id="DotNetFrameworkRequired">Esta aplicación necesita .NET Framework 2.0. Instala .NET Framework y ejecuta de nuevo este instalador.</String>
+    <String Id="DotNetFrameworkRequired">Esta aplicación necesita .NET Framework 4.6.2. Instala .NET Framework y ejecuta de nuevo este instalador.</String>
     <String Id="ImapiRequired">Esta aplicación necesita la API de procesamiento de imágenes v2. Instala la API de procesamiento de imágenes y ejecuta de nuevo este instalador.</String>
-    <String Id="DotNetAndImapiRequired">Esta aplicación necesita .NET Framework 2.0 y la API de procesamiento de imágenes v2. Instala los requisitos previos y ejecuta de nuevo este instalador.</String>
+    <String Id="DotNetAndImapiRequired">Esta aplicación necesita .NET Framework 4.6.2 y la API de procesamiento de imágenes v2. Instala los requisitos previos y ejecuta de nuevo este instalador.</String>
 </WixLocalization>

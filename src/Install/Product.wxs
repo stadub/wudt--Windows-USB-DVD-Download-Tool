@@ -16,7 +16,7 @@
                  Compressed="yes"
                  InstallPrivileges="limited" />
 
-        <PropertyRef Id="NETFRAMEWORK20"/>
+        <PropertyRef Id="WIX_IS_NETFRAMEWORK_46_OR_LATER_INSTALLED" />
 
         <Property Id="IMAPIINSTALLED">
             <RegistrySearch Id="Imapi" 
@@ -28,11 +28,11 @@
         </Property>
 
         <Condition Message="!(loc.DotNetAndImapiRequired)">
-            <![CDATA[Installed OR NETFRAMEWORK20 OR ((VersionNT >= 600) OR IMAPIINSTALLED)]]>
+            <![CDATA[Installed OR WIX_IS_NETFRAMEWORK_46_OR_LATER_INSTALLED OR ((VersionNT >= 600) OR IMAPIINSTALLED)]]>
         </Condition>
 
         <Condition Message="!(loc.DotNetFrameworkRequired)">
-            <![CDATA[Installed OR NETFRAMEWORK20]]>
+            <![CDATA[Installed OR WIX_IS_NETFRAMEWORK_46_OR_LATER_INSTALLED]]>
         </Condition>
 
         <Condition Message="!(loc.ImapiRequired)">
@@ -90,7 +90,7 @@
                             </File>
                             <File Id="Readme" Source="$(var.MSStoreISOTool.ProjectDir)README" ReadOnly="yes" />
                             <File Id="License" Source="$(var.MSStoreISOTool.ProjectDir)COPYING" ReadOnly="yes" />
-                            <File Id="Source" Source="$(var.MSStoreISOTool.ProjectDir)..\wudtsource.zip" />
+                            <File Id="Source" Source="$(var.MSStoreISOTool.ProjectDir)wudtsource.zip" />
                             <File Id="IoWrapperDll" Source="$(var.MSStoreISOTool.TargetDir)IoWrapper.dll" />
                         <?if $(var.Configuration) = Debug ?>
                             <File Id="ToolExeDebugSymbols" Source="$(var.MSStoreISOTool.TargetDir)Windows7-USB-DVD-Download-Tool.pdb"></File>

@@ -8,7 +8,7 @@
     <String Id="ShortcutDescription">Launches the Outil de téléchargement USB/DVD Windows 7</String>
     <String Id="UninstallShortcutName">Uninstall Outil de téléchargement USB DVD Windows 7</String>
     <String Id="UninstallShortcutDescription">Uninstalls the Outil de téléchargement USB/DVD Windows 7</String>
-    <String Id="DotNetFrameworkRequired">Cette application nécessite .NET Framework 2.0. Installez .NET Framework, puis relancez le programme d'installation.</String>
+    <String Id="DotNetFrameworkRequired">Cette application nécessite .NET Framework 4.6.2. Installez .NET Framework, puis relancez le programme d'installation.</String>
     <String Id="ImapiRequired">Cette application nécessite Image Mastering API v2. Installez Image Mastering API, puis relancez le programme d'installation.</String>
-    <String Id="DotNetAndImapiRequired">Cette application nécessite .NET Framework 2.0 et Image Mastering API v2. Installez les pré-requis, puis relancez le programme d'installation.</String>
+    <String Id="DotNetAndImapiRequired">Cette application nécessite .NET Framework 4.6.2 et Image Mastering API v2. Installez les pré-requis, puis relancez le programme d'installation.</String>
 </WixLocalization>

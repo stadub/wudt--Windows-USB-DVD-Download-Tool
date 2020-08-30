@@ -8,7 +8,7 @@
     <String Id="ShortcutDescription">Launches the Windows 7 downloadprogramma voor USB/DVD</String>
     <String Id="UninstallShortcutName">Uninstall Windows 7 downloadprogramma voor USB DVD</String>
     <String Id="UninstallShortcutDescription">Uninstalls the Windows 7 downloadprogramma voor USB/DVD</String>
-    <String Id="DotNetFrameworkRequired">Voor deze toepassing is .NET Framework 2.0 vereist. Installeer .NET Framework en voer vervolgens dit installatieprogramma opnieuw uit.</String>
+    <String Id="DotNetFrameworkRequired">Voor deze toepassing is .NET Framework 4.6.2 vereist. Installeer .NET Framework en voer vervolgens dit installatieprogramma opnieuw uit.</String>
     <String Id="ImapiRequired">Voor deze toepassing is Image Mastering API v2 vereist. Installeer Image Mastering API en voer vervolgens dit installatieprogramma opnieuw uit.</String>
-    <String Id="DotNetAndImapiRequired">Voor deze toepassing zijn .NET Framework 2.0 en Image Mastering API v2 vereist. Installeer de vereiste onderdelen en voer vervolgens dit installatieprogramma opnieuw uit.</String>
+    <String Id="DotNetAndImapiRequired">Voor deze toepassing zijn .NET Framework 4.6.2 en Image Mastering API v2 vereist. Installeer de vereiste onderdelen en voer vervolgens dit installatieprogramma opnieuw uit.</String>
 </WixLocalization>

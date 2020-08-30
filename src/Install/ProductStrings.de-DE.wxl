@@ -8,7 +8,7 @@
     <String Id="ShortcutDescription">Launches the USB/DVD-Downloadtool für Windows 7</String>
     <String Id="UninstallShortcutName">Uninstall USB DVD-Downloadtool für Windows 7</String>
     <String Id="UninstallShortcutDescription">Uninstalls the USB/DVD-Downloadtool für Windows 7</String>
-    <String Id="DotNetFrameworkRequired">Für diese Anwendung ist .NET Framework 2.0 erforderlich. Installieren Sie .NET Framework, und führen Sie anschließend das Installationsprogramm erneut aus.</String>
+    <String Id="DotNetFrameworkRequired">Für diese Anwendung ist .NET Framework 4.6.1 erforderlich. Installieren Sie .NET Framework, und führen Sie anschließend das Installationsprogramm erneut aus.</String>
     <String Id="ImapiRequired">Für diese Anwendung ist die Image Mastering-API v2 erforderlich. Installieren Sie die Image Mastering-API , und führen Sie anschließend das Installationsprogramm erneut aus.</String>
-    <String Id="DotNetAndImapiRequired">Für diese Anwendung sind .NET Framework 2.0 und die Image Mastering-API v2 erforderlich. Installieren Sie die erforderlichen Programme, und führen Sie anschließend das Installationsprogramm erneut aus.</String>
+    <String Id="DotNetAndImapiRequired">Für diese Anwendung sind .NET Framework 4.6.1 und die Image Mastering-API v2 erforderlich. Installieren Sie die erforderlichen Programme, und führen Sie anschließend das Installationsprogramm erneut aus.</String>
 </WixLocalization>
