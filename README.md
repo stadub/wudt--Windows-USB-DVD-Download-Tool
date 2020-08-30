@@ -1,7 +1,12 @@
-# wudt
+# Windows-USB-DVD-Download-Tool (wudt)
 This reposotory cloned from the official 
-Windows USB/DVD Download Tool Codeplex [repository](https://archive.codeplex.com/?p=wudt)
+Windows USB/DVD Download Tool Codeplex [repository](https://archive.codeplex.com/?p=wudt) all issues also migrated
 
+Changes over original package:
+
+* Updated .net framework version to 4.6.2
+* Migrated to Visual studio 2019
+* Some minor changes
 
 wudt
 Windows USB/DVD Download Tool
@@ -18,9 +23,9 @@ Note: You cannot install Windows from the ISO file until you copy it to a USB fl
 
 The copy of the ISO file that the Windows USB/DVD Download tool creates is bootable. Bootable media allows you to install Windows 7 without having to first run an existing operating system on your machine. If you change the boot order of drives in your computer's BIOS, you can run the Windows 7 installation directly from your USB flash drive or DVD when you turn on your computer. Please see the documentation for your computer for information on how to change the BIOS boot order of drives.
 
-For Windows XP Users
+For Windows 7 Users
 
 The following applications must be installed prior to installing the tool:
 
-•Microsoft .NET Framework v2 must be installed. It can be downloaded at http://www.microsoft.com/downloads/details.aspx?FamilyID=0856EACB-4362-4B0D-8EDD-AAB15C5E04F5&displaylang=en.
+•Microsoft .NET Framework v4.6.2 must be installed. It can be downloaded at https://www.microsoft.com/en-us/download/details.aspx?id=53344 .
 •Microsoft Image Mastering API v2 must be installed. It can be downloaded at http://www.microsoft.com/downloads/details.aspx?FamilyId=B5F726F1-4ACE-455D-BAD7-ABC4DD2F147B&displaylang=en.
