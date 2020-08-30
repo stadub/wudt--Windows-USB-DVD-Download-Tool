@@ -55,6 +55,7 @@ namespace MicrosoftStore.IsoTool
             this.txtSource = new System.Windows.Forms.TextBox();
             this.lblSource = new System.Windows.Forms.Label();
             this.panMainScreen = new System.Windows.Forms.Panel();
+            this.lnkDownload = new System.Windows.Forms.LinkLabel();
             this.btnBrowse = new MicrosoftStore.IsoTool.ImageButton();
             this.btnNext = new MicrosoftStore.IsoTool.ImageButton();
             this.lblScreenTitle = new System.Windows.Forms.Label();
@@ -170,12 +171,20 @@ namespace MicrosoftStore.IsoTool
             // panMainScreen
             // 
             this.panMainScreen.BackColor = System.Drawing.Color.Transparent;
+            this.panMainScreen.Controls.Add(this.lnkDownload);
             this.panMainScreen.Controls.Add(this.btnBrowse);
             this.panMainScreen.Controls.Add(this.btnNext);
             this.panMainScreen.Controls.Add(this.lblSource);
             this.panMainScreen.Controls.Add(this.txtSource);
             resources.ApplyResources(this.panMainScreen, "panMainScreen");
             this.panMainScreen.Name = "panMainScreen";
+            // 
+            // lnkDownload
+            // 
+            resources.ApplyResources(this.lnkDownload, "lnkDownload");
+            this.lnkDownload.Name = "lnkDownload";
+            this.lnkDownload.TabStop = true;
+            this.lnkDownload.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkDownload_LinkClicked);
             // 
             // btnBrowse
             // 
@@ -400,10 +409,8 @@ namespace MicrosoftStore.IsoTool
             // imgMediaImage
             // 
             this.imgMediaImage.BackColor = System.Drawing.Color.Transparent;
-            this.imgMediaImage.ErrorImage = null;
-            this.imgMediaImage.Image = global::MicrosoftStore.IsoTool.Properties.Resources.DvdImage;
             resources.ApplyResources(this.imgMediaImage, "imgMediaImage");
-            this.imgMediaImage.InitialImage = null;
+            this.imgMediaImage.Image = global::MicrosoftStore.IsoTool.Properties.Resources.DvdImage;
             this.imgMediaImage.Name = "imgMediaImage";
             this.imgMediaImage.TabStop = false;
             // 
@@ -462,8 +469,8 @@ namespace MicrosoftStore.IsoTool
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.TransparencyKey = System.Drawing.Color.LavenderBlush;
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
             this.panUsbScreen.ResumeLayout(false);
             this.panMainScreen.ResumeLayout(false);
             this.panMainScreen.PerformLayout();
@@ -516,9 +523,6 @@ namespace MicrosoftStore.IsoTool
         private ProgressBar progressBar;
         private System.Windows.Forms.Label lblMediaTypeMessage;
         private ImageButton btnBeginBackup;
-
-
-
-
+        private System.Windows.Forms.LinkLabel lnkDownload;
     }
 }

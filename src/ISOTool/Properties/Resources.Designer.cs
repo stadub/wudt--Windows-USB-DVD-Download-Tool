@@ -148,6 +148,15 @@ namespace MicrosoftStore.IsoTool.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to https://github.com/stadub/wudt--Windows-USB-DVD-Download-Tool/blob/master/WindowsDownloadLink.md.
+        /// </summary>
+        internal static string DownloadLinkUrl {
+            get {
+                return ResourceManager.GetString("DownloadLinkUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0} (estimated time remaining {1}).
         /// </summary>
         internal static string DvdBurningProgress {
@@ -241,7 +250,7 @@ namespace MicrosoftStore.IsoTool.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://go.microsoft.com/fwlink/?LinkId=163455&amp;clcid=0x409.
+        ///   Looks up a localized string similar to https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool.
         /// </summary>
         internal static string HelpLinkUrl {
             get {

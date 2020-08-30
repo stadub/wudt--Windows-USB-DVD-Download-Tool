@@ -152,7 +152,10 @@
     <value>Ready to burn. Click "Begin burning" to create the backup DVD.</value>
   </data>
   <data name="HelpLinkUrl" xml:space="preserve">
-    <value>http://go.microsoft.com/fwlink/?LinkId=163455&amp;clcid=0x409</value>
+    <value>https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool</value>
+  </data>
+  <data name="DownloadLinkUrl" xml:space="preserve">
+    <value>https://github.com/stadub/wudt--Windows-USB-DVD-Download-Tool/blob/master/WindowsDownloadLink.md</value>
   </data>
   <data name="IsoInvalidCaption" xml:space="preserve">
     <value>Invalid ISO File</value>

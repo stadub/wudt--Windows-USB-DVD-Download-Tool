@@ -699,5 +699,12 @@ namespace MicrosoftStore.IsoTool
             [DllImport("user32", CharSet = CharSet.Auto)]
             private static extern int RegisterWindowMessage([In, MarshalAs(UnmanagedType.LPWStr)] string msgString);
         }
+
+        private void lnkDownload_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(Properties.Resources.DownloadLinkUrl);
+
+        }
+
     }
 }
