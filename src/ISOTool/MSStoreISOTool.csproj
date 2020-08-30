@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MicrosoftStore.IsoTool</RootNamespace>
-    <AssemblyName>Windows7-USB-DVD-Download-Tool</AssemblyName>
+    <AssemblyName>Windows_7-8.1_USB-DVD-Download-Tool</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetZone>LocalIntranet</TargetZone>
@@ -154,6 +154,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.ko-KR.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.nl-NL.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

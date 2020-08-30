@@ -62,7 +62,7 @@
                     <?if $(var.Culture) != en-US ?>
                         <Directory Id="ResourcesDir" Name="$(var.Culture)">
                             <Component Id="ResourceComponent" DiskId="1" Guid="7121DF56-62B6-4761-B625-19C2E75A13EF">
-                                <File Id="ResourceDll" Source="$(var.MSStoreISOTool.TargetDir)$(var.Culture)\Windows7-USB-DVD-Download-Tool.resources.dll" />
+                                <File Id="ResourceDll" Source="$(var.MSStoreISOTool.TargetDir)$(var.Culture)\Windows_7-8.1_USB-DVD-Download-Tool.resources.dll" />
 
                                 <RegistryKey Root="HKCU" Key="SOFTWARE\Microsoft\ISO Backup Tool">
                                     <RegistryValue Name="Version" Value="[ProductVersion]" Type="string" KeyPath="yes" />
@@ -93,7 +93,7 @@
                             <File Id="Source" Source="$(var.MSStoreISOTool.ProjectDir)\..\wudtsource.zip" />
                             <File Id="IoWrapperDll" Source="$(var.MSStoreISOTool.TargetDir)IoWrapper.dll" />
                         <?if $(var.Configuration) = Debug ?>
-                            <File Id="ToolExeDebugSymbols" Source="$(var.MSStoreISOTool.TargetDir)Windows7-USB-DVD-Download-Tool.pdb"></File>
+                            <File Id="ToolExeDebugSymbols" Source="$(var.MSStoreISOTool.TargetDir)Windows_7-8.1_USB-DVD-Download-Tool.pdb"></File>
                         <?endif ?>
 
                             <RegistryKey Root="HKCU" Key="SOFTWARE\Microsoft\ISO Backup Tool">
